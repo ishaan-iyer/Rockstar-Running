@@ -2,34 +2,178 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <title>Rockstar Running - Workouts</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Rockstar Running Workouts</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  </head>
-  <body>
-    <div class="container">
-      <h1>Rockstar Running</h1>
-      <div class="row">
-      <div class="card">
-        warmup
-      <div class="workout">
-        <li>2 miles warmup</li>
-        <li>Stretch</li>
-           <li>Dynamic Warmup</li>
-        <div class="h2">
-          800 meters
 
-        <div class="8*200 fast @ 40 sec rest">
-          <div class="classname">
-            8*200 fast @ 40 sec rest
+    <!-- Bootstrap CSS only -->
+     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    >
+  </head>
+  <body class="bg-light">
+
+
+
+    <!-- 800m WORKOUT HERO -->
+     <header class="bg-warning text-white py-4">
+      <div class="container">
+
+
+        <!-- Title + Arrow -->
+        <div class="row align-items-center mb-4">
+          <div class="col-10">
+            <h1 class="display-4 fw-bold mb-0">800m workout</h1>
+          </div>
+          <div class="col-2 text-end">
+            <span class="fs-1">&#8599;</span>
           </div>
         </div>
+
+
+        <!-- Warmup / Main / Cooldown boxes -->
+         <div class="row g-3">
+          <div class="col-md-4">
+            <div class="border-light p-4 h-100">
+              <h2 class="h4 fw-semibold mb-3">warmup</h2>
+              <p class="mb-1">20 minute warmup jog</p>
+              <p class="mb-1">Active stretches</p>
+              <p cclass="mb-0">Hip Mobility</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <p class="mb-0 fs-4">8*200 @<br>40sec with 2<br>min rest</p>
+          </div>
+         </div>
+         <div class="col-md-4">
+          <div class="border border-light p-4 h-100">
+            <h2 class="h4 fw-semibold mb-3">cool down</h2>
+            <p class="mb-1">1.5 mile cool down</p>
+            <p class="mb-0">Cool down stretching</p>
+          </div>
+         </div>
       </div>
+
     </div>
-  </div>
-</div>
-</div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+     </header>
+
+     <!-- 1500m WORKOUT + 5*1k CARD -->
+      <section class="bg-light py-5">
+        <div class="container">
+          <div class="row g-4 align-items-center">
+            <!-- Text -->
+            <div class="col-md-6">
+              <h2 class="display-6 fw-bold text-warning mb-3">1500m<br>workout</h2>
+              <p class="mb-1 fs-5">Cool down:</p>
+              <p class="mb-0 fs-5">Shut down stretching</p>
+            </div>
+
+
+            <!-- Orange 5*1k block -->
+             <div class="col-md-6">
+              <div class="bg-warning text-white rounded-4 p-4 p-md-5 h-100">
+                <p class="display-4 fw-bold mb-4">5*1k</p>
+                <p class="mb-0">
+                  1k's @ 3 minute pace<br>
+                  1 minute 30 seconds<br>
+                  active rest.
+                </p>
+              </div>
+             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5k WORKOUT + IMAGE -->
+       <section class="bg-light pb-5">
+        <div class="container">
+          <div class="row g-4 align-items-center">
+            <!-- 5k card -->
+            <div class="col-md-6">
+              <div class="border border-warning rounded-4 p-4 p-md-5 h-100">
+                <h3 class="h4 fw-semibold text-warning mb-3">5k workout</h3>
+                <p class="mb-1">4X 2k @ 6 minute pace</p>
+                <p class="mb-0">2 minute active recovery</p>
+              </div>
+            </div>
+
+            <!-- Abstract image -->
+             <div class="col-md-6">
+              <img
+                src="/mnt/data/Services.png"
+                alt="Workout abstract"
+                class="img-fluid rounded-4 w-100"
+              >
+             </div>
+          </div>
+        </div>
+       </section>
+
+
+       <!-- IMAGE + CONTACT FORM -->
+       <section classs="bg-light pb-5">
+        <div class="container">
+          <div class="row g-4">
+            <!-- Wide iamge -->
+            <div class="col-lg-7">
+              <img
+                src="https://images.pexels.com/photos/3756766/pexels-photo-3756766.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                alt="Running fast"
+                class="img-fluid rounded-4 w-100"
+              >
+              <p class="position-relative mt-3 text-white">
+                <!-- overlay text approximation -->
+                 <span class="bg-transparent">Running fast in workout 8*200</span>
+              </p>
+            </div>
+
+            <!-- Contact form -->
+            <div class="col-lg-5">
+              <form>
+                <div class="mb-3">
+                  <label for="fullName" class="form-label">Full name</label>
+                  <input type="text" class="form-control border-warning" id="fullName" placeholder="">
+                </div>
+
+                <div class="mb-3">
+                  <label for="emailAddress" class="form-label">Email address</label>
+                  <input type="email" class="form-control border-warning" id="emailAddress" placeholder="">
+                </div>
+
+                <div class="mb-3">
+                  <label for="mobileNumber" class="form-label"> Mobile number</label>
+                  <input type="tel" class="form-control border-warning" id="mobileNumber" placeholder="">
+                </div>
+
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control border-warning" id="message" rows="4"></textarea>
+                </div>
+
+                <div class="d-grid mb-2">
+                  <button type="submit" class="btn btn-warning text-white fw-semibold">
+                    Submit
+                  </button>
+                </div>
+                <p class="text-muted small mb-0">
+                  Your name won't be shared. Never submit passwords.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+       </section>
+
+
+       <!-- FOOTER -->
+        <footer class="bg-light pb-4">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 small text-muted">
+                AGConsulting@emailyourwebsite.com
+              </div>
+            </div>
+          </div>
+        </footer>
   </body>
 </html>
